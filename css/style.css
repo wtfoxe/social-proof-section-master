@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+html {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat ,no-repeat;
+    background-size: 800px, 1500px;
+    background-position-x: 0vw, 20vw;
+    background-position-y: -2vh, 10vh;
+}
+
+/*PARTE SUPERIOR*/
+.title{
+    font-size: 58px;
+    font-weight: 700;
+
+    color: #502050;
+}
+.subtitle{
+    font-size: 18px;
+    font-weight: 400;
+
+    color: #937b92;
+
+    padding-top: 10px;
+}
+
+.top-card{
+    display: flex;
+    justify-content:space-between;
+
+    height: 300px;
+    margin: 110px 300px;
+    margin-bottom: 60px;
+}
+
+.side-card{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: left;
+
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+}
+
+.stars {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+    
+    background-color: #f7f2f7;  
+    border-radius: 0.4rem;
+
+    height: 70px;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.stars.prim{
+    margin-top: 1rem;
+}
+
+.stars.sec {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.stars.terc {
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.side-card img{
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+
+.image-stars{
+    margin: 10px 16px;
+}
+
+.stars span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    color: #502050;
+}
+
+/*PARTE INFERIOR*/
+.bottom-card{
+    display: inline-flex;
+    justify-content: space-between;
+
+    height: 330px;
+    width: 1300px;
+    margin: 0 300px;
+}
+
+.profile {
+    background-color: #502050;
+    border-radius: 0.7rem;
+    
+    width: 380px;
+    height: 250px;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.profile.sec{
+    margin-top: 1.5em;
+}
+
+.profile.terc{
+    margin-top: 2.5rem;
+}
+
+.profile-owner{
+    display: inline-flex;
+
+    width:80%;
+    margin: 2rem 2.5rem;
+
+    color: #fff;
+    font-weight: 700;
+}
+
+.profile-owner img{
+    text-align: left;
+    border-radius: 5rem;
+
+    height: 55px;
+    width: 55px;
+}
+
+.profile-owner p{
+    margin: auto;
+    width: 60%;
+}
+
+.profile-owner span{
+    display: block;
+    color:#ee68a4;
+    font-weight: 400;
+}
+
+.profile-comment{
+    margin: auto;
+    width: 80%;
+
+    color: #ffffff
+}
+
+
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
