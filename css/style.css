@@ -7,6 +7,9 @@
 
 
 html {
+    max-width: 1440px;
+    margin: auto;
+
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat ,no-repeat;
     background-size: 800px, 1500px;
@@ -34,9 +37,10 @@ html {
     display: flex;
     justify-content:space-between;
 
-    height: 300px;
-    margin: 110px 300px;
-    margin-bottom: 60px;
+    height: 25rem;
+    width: 90%;
+    margin: 7rem auto;
+    margin-bottom: 3rem;
 }
 
 .side-card{
@@ -46,7 +50,6 @@ html {
 
     height: 100%;
     width: 40%;
-    padding: 10px;
 }
 
 .stars {
@@ -58,28 +61,22 @@ html {
     border-radius: 0.4rem;
 
     height: 70px;
-    width: 100%;
-    margin: 5px auto;
-}
-
-.stars.prim{
-    margin-top: 1rem;
+    width: 95%;
+    margin: 1rem 0;
 }
 
 .stars.sec {
-    margin-left: 3rem;
-    margin-top: 1rem;
+    margin-left: 2rem;
 }
 
 .stars.terc {
-    margin-left: 6rem;
-    margin-top: 1rem;
+    margin-left: 4rem;
 }
 
 .side-card img{
     width: 16px;
     height: 16px;
-    margin: 2px;
+    margin: 1px;
 }
 
 .image-stars{
@@ -100,9 +97,9 @@ html {
     display: inline-flex;
     justify-content: space-between;
 
-    height: 330px;
-    width: 1300px;
-    margin: 0 300px;
+    height: 20rem;
+    width:90%;
+    margin: 0 4.5rem;
 }
 
 .profile {
@@ -112,16 +109,16 @@ html {
     width: 380px;
     height: 250px;
 
-    margin: 5px;
+    margin: 1rem 1rem;
     padding: 5px;
 }
 
 .profile.sec{
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 
 .profile.terc{
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 
 .profile-owner{
@@ -160,12 +157,101 @@ html {
     color: #ffffff
 }
 
-
 .attribution {
-font-size: 11px;
-text-align: center;
+    font-size: 12px;
+    text-align: center;
 }
 .attribution a {
-color: hsl(228, 45%, 44%);
+    color: #3e52a3;
 }
 
+@media(max-width: 375px){
+    /*PARTE SUPERIOR*/
+    .title {
+        margin: 2rem 2rem 0;
+        width: 18rem;
+
+        font-size: 30px;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .subtitle {
+        margin: 0.5rem 1rem;
+        width: 20rem;
+
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    .top-card{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+        
+    .stars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            
+        height: 6rem;
+        width: 21rem;
+        margin: 1rem 0.6rem ;
+    }
+    
+    .stars.sec {
+        margin: 0.6rem;
+    }
+    
+    .stars.terc {
+        margin-left: 0.6rem;
+    }
+    
+    .side-card img{
+        width: 18px;
+        height: 18px;
+        margin: 0.8rem 0.1rem 0;
+    }
+
+    /*PARTE INFERIOR*/
+    .bottom-card{
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+        height: 60rem;
+    }
+    
+    .profile {
+        width: 20rem;
+        height: 20rem;
+    
+        margin: 1rem auto;
+        padding: 0;
+    }
+    
+    .profile.sec{
+        margin-top: 1rem;
+    }
+    
+    .profile.terc{
+        margin-top: 1rem;
+    }
+    
+    .profile-owner img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .attribution {
+        font-size: 15px;
+    }
+    .attribution a {
+        color: #3e52a3;
+    }
+}
